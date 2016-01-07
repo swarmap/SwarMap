@@ -1,0 +1,10 @@
+# Git Ignore
+
+# Composer Dependencies
+/vendor
+
+# Template Cache
+/cache/*
+
+# Vagrant VM
+/.vagrant

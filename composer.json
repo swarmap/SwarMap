@@ -1,0 +1,21 @@
+{
+   "name": "swarmap/swarmap",
+   "description": "A map to help meet fellow Swarmwise activists in your local area.",
+   "type": "project",
+   "license": "CC-BY-SA-4.0",
+   "authors": [
+      {
+         "name": "Olivia Mackintosh",
+         "email": "livvy@protonmail.com"
+      }
+   ],
+   "require": {
+      "slim/slim":"^3.0",
+      "slim/twig-view": "^2.0"
+   },
+   "autoload": {
+     "psr-4": {
+       "Swarmap\\": "app/"
+     }
+   }
+}

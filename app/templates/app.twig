@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>SwarmMap</title>
+   <!-- Stylesheets -->
+   <link rel="stylesheet" type"text/css" href="/css/leafletjs.css">
+   <link rel="stylesheet" type"text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" type"text/css" href="/css/swarmmap.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+   <div class="container full-height">
+      <div class="row full-height">
+
+         <!-- Sidebar -->
+         <div id="sidebar" class="col-md-2 full-height" style="padding:14px;">
+            <h1>SwarMap</h1>
+            <hr>
+            <p>A map to help meet fellow Swarmwise activists in your local area.</p>
+            <hr>
+            <a id="btnRedecentralize" class="btn-sidebar btn btn-default btn-large" href="http://redecentralize.org/" target="_blank">
+               <img src="http://redecentralize.org/assets/images/logo.png"/>
+               <span><b>redecentralize</b>.org<span>
+               </a>
+               <a id="btnCloneOnGithub" class="btn-sidebar btn btn-default btn-large" href="https://github.com/SwarMap/SwarMap" target="_blank">
+                  <span><b>Fork me on </b></span><br />
+                  <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png"/>
+               </a>
+            </div>
+
+            <!-- Map -->
+            <div id="" class="col-md-10 full-height">
+               <div id="map" class="full-height">
+                  <div id="controls" class="full-height">
+                     <button type="button" id="addPin" class="btn btn-primary" data-toggle="modal" data-target="#dataModal">Add Pin</button>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Data Modal -->
+            <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="dataModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="dataModalLabel">Adding a pin</h4>
+                     </div>
+                     <div class="modal-body">
+                        <form class="" action="/addpin" method="post">
+                           <div class="input-group">
+                              <input type="text" class="form-control" aria-label="...">
+                              <div class="input-group-btn">
+                                 <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-question-sign"></span>
+                                 </button>
+                              </div>
+                           </div>
+                           <fieldset>
+                              <legend>Location</legend>
+                              <div class="row">
+                                 <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Longitude">
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Latitude">
+                                 </div>
+                              </div>
+                           </fieldset>
+                           <fieldset>
+                              <legend>Contact Details</legend>
+                              <input type="text" class="form-control" placeholder="Full Name">
+                              <input type="email" class="form-control" placeholder="Email">
+                           </fieldset>
+                        </form>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Confirm</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- JavaScript -->
+      <script src="/js/leafletjs.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="/js/swarmmap.js" type="text/javascript"></script>
+   </body>
+   </html>

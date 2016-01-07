@@ -1,0 +1,58 @@
+* {
+   box-sizing: border-box;
+}
+
+html,body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.container {
+   width:100%;
+}
+
+#map {
+   height: 100%;
+   width: 100%;
+}
+
+.full-height {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+div#controls {
+   padding:10px;
+   position: absolute;
+   z-index: 1000;
+}
+
+h1 {
+   font-size: 28px;
+   text-align: center;
+}
+
+h2 {
+   font-size: 24px;
+   text-align: center;
+}
+
+.btn-sidebar {
+   width:100%;
+   margin: 6px auto;
+   height:64px;
+}
+.btn-sidebar:hover {
+   background-color: #A0E0A9;
+}
+
+.btn-sidebar img{
+   max-width:34%;
+}
+
+legend {
+   margin-top: 0px;
+   margin-bottom: 10px;
+}
