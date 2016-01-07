@@ -21,17 +21,6 @@ map.addControl(control);
 // Add map tiles and attributions
 L.tileLayer(MB_URL, {attribution: MB_ATTR, id: 'mapbox.streets'}).addTo(map);
 
-// Add any circles (regions)
-
-// Add any markers (people)
-L.marker([54.13, -1.52]).addTo(map).bindPopup(
-	"<b>Olivia Mackintosh</b><br />"+
-	"Email: livvy@protonmail.com<br />"+
-	"GitHub: livmackintosh<br />"+
-	"Twitter: @livmackintosh<br />"+
-	"www: livmackintosh.me"
-);
-
 $('#myModal').on('shown.bs.modal', function () {
   $('#addPin').focus()
 })
