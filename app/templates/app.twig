@@ -11,9 +11,8 @@
 <body>
    <div class="container full-height">
       <div class="row full-height">
-
          <!-- Sidebar -->
-         <div id="sidebar" class="col-md-2 full-height" style="padding:14px;">
+         <div id="sidebar" class="col-sm-4 col-md-3 col-lg-2 hidden-xs full-height" style="padding:14px;">
             <h1>SwarMap</h1>
             <hr>
             <p>A map to help meet fellow Swarmwise activists in your local area.</p>
@@ -29,7 +28,7 @@
             </div>
 
             <!-- Map -->
-            <div id="" class="col-md-10 full-height">
+            <div id="" class="col-sm-8 col-md-9 col-lg-10 full-height">
                <div id="map" class="full-height">
                   <div id="controls" class="full-height">
                      <button type="button" id="addPin" class="btn btn-primary" data-toggle="modal" data-target="#dataModal">Add Pin</button>
@@ -47,29 +46,41 @@
                      </div>
                      <div class="modal-body">
                         <form class="" action="/addpin" method="post">
-                           <div class="input-group">
-                              <input type="text" class="form-control" aria-label="...">
-                              <div class="input-group-btn">
-                                 <button class="btn btn-default" type="button">
-                                    <span class="glyphicon glyphicon-question-sign"></span>
-                                 </button>
-                              </div>
-                           </div>
                            <fieldset>
-                              <legend>Location</legend>
+                              <legend>Name & Email</legend>
                               <div class="row">
                                  <div class="col-sm-6">
-                                    <input type="text" class="form-control" placeholder="Longitude">
+                                    <input type="text" class="form-control" placeholder="Full Name"></input>
                                  </div>
                                  <div class="col-sm-6">
-                                    <input type="text" class="form-control" placeholder="Latitude">
+                                    <input type="text" class="form-control" placeholder="Email"></input>
                                  </div>
                               </div>
                            </fieldset>
                            <fieldset>
-                              <legend>Contact Details</legend>
-                              <input type="text" class="form-control" placeholder="Full Name">
-                              <input type="email" class="form-control" placeholder="Email">
+                              <legend>Location</legend>
+                              <div class="row">
+                                 <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Longitude"></input>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Latitude"></input>
+                                 </div>
+                              </div>
+                           </fieldset>
+                           <fieldset>
+                              <legend>Social Media</legend>
+                              <div class="row">
+                                 <div class="col-sm-6">
+                                    <div class="input-group">
+                                       <span class="input-group-addon" id="basic-addon1">@</span>
+                                       <input type="text" class="form-control" placeholder="Twitter">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Website"></input>
+                                 </div>
+                              </div>
                            </fieldset>
                         </form>
                      </div>

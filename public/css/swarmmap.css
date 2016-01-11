@@ -17,6 +17,9 @@ html,body {
    width: 100%;
 }
 
+#sidebar {
+}
+
 .full-height {
    margin:0;
    padding:0;
@@ -50,6 +53,10 @@ h2 {
 
 .btn-sidebar img{
    max-width:34%;
+}
+
+fieldset {
+   margin-bottom: 10px;
 }
 
 legend {
