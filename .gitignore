@@ -1,10 +1,7 @@
-# Git Ignore
-
-# Composer Dependencies
-/vendor
-
-# Template Cache
-/cache/*
-
-# Vagrant VM
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+/.idea
 /.vagrant
